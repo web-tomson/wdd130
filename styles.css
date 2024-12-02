@@ -155,3 +155,143 @@ footer {
     </footer>
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Rafting Adventures</title>
+  <link rel="stylesheet" href="rafting.css">
+</head>
+<body>
+  <header>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  header {
+      background-color: #d8c8f7;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+  }
+  header img {
+      height: 60px;
+      margin-right: 20px;
+  }
+  nav {
+      margin-left: auto;
+  }
+  nav a {
+      text-decoration: none;
+      color: #000;
+      margin: 0 15px;
+      font-size: 16px;
+  }
+  nav a:hover {
+      text-decoration: underline;
+  }
+  .hero {
+      text-align: center;
+      padding: 20px;
+  }
+  .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+  }
+  .hero p {
+      font-size: 1rem;
+      color: #555;
+  }
+  .content-section {
+      padding: 20px;
+  }
+  .content-section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+  }
+  .content-section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #333;
+  }
+  footer {
+      background-color: #d8c8f7;
+      text-align: center;
+      padding: 10px;
+  }
+  footer .social-icons img {
+      width: 30px;
+      margin: 0 10px;
+      cursor: pointer;
+  }
+</style>
+</head>
+    <div class="header-container">
+      <img src="images/logo6_200.png" alt="Rafting Adventures Logo">
+      <h1>Rafting Adventures</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="history">
+      <h2>History</h2>
+      <div class="history-container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.</p>
+        <img src="images/the Heaven.jpg" alt="Our History">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.</p>
+      </div>
+    </section>
+
+    <section id="adventures">
+      <h2>Adventure Awaits You</h2>
+      <div class="adventure-gallery">
+        <figure>
+          <img src="images/Tree.jfif" alt="Los Dientes del Diablo">
+          <figcaption>Los Dientes del Diablo</figcaption>
+        </figure>
+        <figure>
+          <img src="images/bird.jpg" alt="Number One in our goal">
+          <figcaption>Number One in your goal</figcaption>
+        </figure>
+        <figure>
+          <img src="images/images.jfif" alt="The Green Life">
+          <figcaption>The Green Life</figcaption>
+        </figure>
+        <figure>
+          <img src="images/general.jfif" alt="Keep flaing">
+          <figcaption>Keep Flaying</figcaption>
+        </figure>
+        <figure>
+          <img src="images/flower.jfif" alt="Your Dream">
+          <figcaption>Your Dream</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Rafting Adventures. All Rights Reserved.</p>
+    <nav class="sociallinks">
+      <a href="https://facebook.com">
+      <img src="images/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://youtube.com">
+      <img src="images/Youtube.png" alt="Youtube">
+      </a>
+      </nav>
+  </footer>
+</body>
+</html>

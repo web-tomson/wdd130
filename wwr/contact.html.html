@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us at [Company Name] for inquiries, reservations, or suggestions. Find our address, phone number, email, and more on this page.">
+    <title>Contact Us - [H. World Information]</title>
+    <link rel="stylesheet" href="rafting.css">
+</head>
+<body>
+    <header>
+        <h1>[H. World Information]</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="company-info">
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> 123 Freetown Road lumley Town, Freetown</p>
+            <p><strong>Phone:</strong> (+232) 731796</p>
+            <p><strong>Email:</strong> info@</p>
+            <div id="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.83543450944!2d-122.42067968468138!3d37.77492977975971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c33134b0d%3A0xe0a650527e4101f5!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1692647398472!5m2!1sen!2sus" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <section id="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="employee">
+                <img src="employee1.jpg" alt="Employee 1">
+                <p><strong>Samuel David</strong> - Customer Support</p>
+            </div>
+            <div class="employee">
+                <img src="employee2.jpg" alt="Employee 2">
+                <p><strong>John Smith</strong> - Reservation Specialist</p>
+            </div>
+            <div class="employee">
+                <img src="employee3.jpg" alt="Employee 3">
+                <p><strong>Emily Johnson</strong> - Tour Guide</p>
+            </div>
+        </section>
+
+        <section id="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Your Message:</legend>
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 [Company Name]. All rights reserved.</p>
+        <p><a href="contact-wireframe.png">View Contact Us Wireframe</a></p>
+    </footer>
+</body>
+</html>

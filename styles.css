@@ -5,20 +5,20 @@ main {
 aside {
   width: 20rem;
   margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2);
+  border: 1px solid rgba(31, 6, 6, 0.678);
   padding: 1rem;
-  background-color: #eee;
+  background-color: #20bea9d3;
   color: #333;
   text-align: center;
 }
 
 aside img {
-  width: 150px;
+  width: 100px;
   height: auto;
 }
 
 main img {
-  width: 150px;
+  width: 100px;
   height: auto;
 }
 

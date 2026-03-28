@@ -1,72 +1,70 @@
+/* --- CSS VARIABLES --- */
 :root {
-  --primary-color: #0b3c5d;
-  --secondary-color: #328cc1;
-  --accent1-color: #1d2731;
-  --accent2-color: #d9b310;
-  --heading-font: Georgia, serif;
-  --body-font: Arial, sans-serif;
+  --primary-color: #004e7c;    /* Deep River Blue */
+  --secondary-color: #f1f1f1;  /* Light Grey Background */
+  --accent1-color: #e85d04;    /* Adventure Orange */
+  --heading-font: "Rockwell", serif;
+  --body-font: "Arial", sans-serif;
 }
 
-/* Reset */
+/* --- BOX MODEL RESET --- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
+/* --- DOCUMENT BODY --- */
 body {
   font-family: var(--body-font);
-  color: var(--accent1-color);
+  color: #333;
 }
 
-/* Layout width */
-header, main, footer {
+/* --- SHARED LAYOUT --- */
+/* This centers your main content at 840px width as required */
+.header, .hero, .history, .adventures, footer {
   width: 840px;
   margin: 0 auto;
 }
 
-/* Headings */
+/* --- HEADINGS --- */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
+  padding: 10px 0;
 }
 
-/* Spacing */
+/* --- NAVIGATION & TEXT MARGINS --- */
 nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
 
-/* Header */
-header {
+/* --- HEADER STYLING --- */
+.header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: var(--primary-color);
-  color: white;
+  justify-content: space-between;
+  padding: 10px 0;
 }
 
-header img {
-  margin: 10px;
+.logo {
+  width: 100px;
+  height: auto;
 }
 
-/* Navigation */
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  margin: 10px;
-}
-
-nav a {
-  color: white;
+.nav a {
   text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-left: 20px;
 }
 
-/* Hero Section */
+.nav a:hover {
+  color: var(--accent1-color);
+}
+
+/* --- HERO SECTION (OVERLAY) --- */
 .hero {
   position: relative;
 }
@@ -77,46 +75,65 @@ nav a {
   height: auto;
 }
 
-/* Hero Heading Overlay */
 .hero h1 {
   position: absolute;
-  top: 20px;
+  top: 40px;
   width: 100%;
-  padding: 16px;
   text-align: center;
-  background-color: var(--accent1-color);
+  background-color: rgba(232, 93, 4, 0.7); /* Using Accent Color with Opacity */
   color: white;
-  opacity: 0.8;
+  padding: 20px;
 }
 
-/* Article Overlay */
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  background-color: white;
-  opacity: 0.9;
+/* --- HISTORY & GALLERY --- */
+.history-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-/* Article Image */
-.hero article img {
-  float: right;
-  width: 125px;
-margin-left: 10px;
+.history-content img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
 }
 
-/* Footer */
+.adventure-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+/* --- FOOTER --- */
 footer {
-  text-align: center;
-  background-color: var(--primary-color);
-  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #3c54db;
+  margin-top: 40px;
+  padding: 20px 0;
 }
 
-/* Social Media */
 .socialmedia a {
   text-decoration: none;
 }
 
 .socialmedia img {
   width: 30px;
-  margin: 5px;
+  height: auto;
+  margin-left: 10px;
 }

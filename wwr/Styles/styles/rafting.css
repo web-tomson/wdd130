@@ -1,139 +1,54 @@
-/* --- CSS VARIABLES --- */
-:root {
-  --primary-color: #004e7c;    /* Deep River Blue */
-  --secondary-color: #f1f1f1;  /* Light Grey Background */
-  --accent1-color: #e85d04;    /* Adventure Orange */
-  --heading-font: "Rockwell", serif;
-  --body-font: "Arial", sans-serif;
-}
-
-/* --- BOX MODEL RESET --- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* --- DOCUMENT BODY --- */
-body {
-  font-family: var(--body-font);
-  color: #333;
-}
-
-/* --- SHARED LAYOUT --- */
-/* This centers your main content at 840px width as required */
-.header, .hero, .history, .adventures, footer {
-  width: 840px;
-  margin: 0 auto;
-}
-
-/* --- HEADINGS --- */
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  padding: 10px 0;
-}
-
-/* --- NAVIGATION & TEXT MARGINS --- */
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
-}
-
-/* --- HEADER STYLING --- */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0;
-}
-
-.logo {
-  width: 100px;
-  height: auto;
-}
-
-.nav a {
-  text-decoration: none;
-  color: var(--primary-color);
-  font-weight: bold;
-  margin-left: 20px;
-}
-
-.nav a:hover {
-  color: var(--accent1-color);
-}
-
-/* --- HERO SECTION (OVERLAY) --- */
-.hero {
-  position: relative;
-}
-
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 40px;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(232, 93, 4, 0.7); /* Using Accent Color with Opacity */
-  color: white;
+/* Contact Page Specific Layout */
+.info-grid, .employee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
   padding: 20px;
 }
 
-/* --- HISTORY & GALLERY --- */
-.history-content {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.history-content img {
-  width: 250px;
-  height: auto;
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
   border-radius: 8px;
 }
 
-.adventure-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  padding: 20px 0;
+.form-item {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
-.adventure-gallery img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
+.form-item label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-figcaption {
-  text-align: center;
-  font-size: 0.8rem;
-  margin-top: 5px;
+fieldset {
+  border: 1px solid #000;
+  margin-bottom: 15px;
+  padding: 10px;
 }
 
-/* --- FOOTER --- */
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid #3c54db;
-  margin-top: 40px;
-  padding: 20px 0;
+button[type="submit"] {
+  background-color: #05668d; /* Match your site theme */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
 }
 
-.socialmedia a {
-  text-decoration: none;
-}
-
-.socialmedia img {
-  width: 30px;
-  height: auto;
-  margin-left: 10px;
+button[type="submit"]:hover {
+  background-color: #02c39a;
 }

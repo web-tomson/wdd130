@@ -1,40 +1,82 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Ansu Tommy | WDD 130</title>
-
-  <meta name="description" content="Home page of Ansu Tommy for WDD130 Web Fundamentals course. This page introduces the student and their learning journey in web development.">
-  <meta name="author" content="Ansu Tommy">
-
-  <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Experience the thrill of white water rafting adventures with Dry Oar Rafting.">
+  <title>Home | Dry Oar Rafting</title>
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="wwr/">Rafting Website</a>
-    </nav>
-  </header>
 
-  <main>
-    <h1>Ansu Tommy | WDD 130</h1>
-    <img src="images/self_profile.jpg" alt="Hello, my name is Ansu Tommy">
-    <p>Hello! I’m Ansu Tommy from Sierra Leone. I’m studying web development and enjoy building clean, accessible pages. In my free time I like learning new technology and improving my coding skills.</p>
-  </main>
+<header class="header">
+  <img src="images/logo.png" alt="Rafting Logo" class="logo">
 
-  <aside>
-    <h2>Sierra Leone</h2>
-    <img src="images/Sl land scape.jpg" alt="Beautiful landscape of Sierra Leone">
-    <p>Sierra Leone is a country in West Africa known for its beautiful beaches, natural resources, and rich cultural heritage. Its capital city, Freetown, sits on the Atlantic coast and is famous for its history and vibrant communities.</p>
-  </aside>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="trips.html">Trips</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <footer>
-    <p>&copy; 2026 ❖ Ansu Tommy ❖ Sierra Leone</p>
-  </footer>
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="images/hero.jpg" alt="Rafting Adventure">
+    <h1>Experience the Adventure of a Lifetime</h1>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta">
+    <h2>Ready for Your Next Adventure?</h2>
+    <p>Explore our exciting rafting trips and start your journey today!</p>
+    <a href="trips.html" class="btn">View Trips</a>
+  </section>
+
+  <!-- GRID CONTENT -->
+  <section class="grid">
+    <div>
+      <img src="images/river.jpg" alt="River Rafting">
+      <h3>Thrilling Rivers</h3>
+      <p>Ride through some of the most exciting rapids with our expert guides.</p>
+    </div>
+
+    <div>
+      <img src="images/camping.jpg" alt="Camping Adventure">
+      <h3>Outdoor Experience</h3>
+      <p>Enjoy nature with our multi-day rafting and camping adventures.</p>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form>
+      <label>Name:
+        <input type="text" name="name" required>
+      </label>
+
+      <label>Email:
+        <input type="email" name="email" required>
+      </label>
+
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 | Dry Oar Rafting | Ansu Tommy</p>
+  <nav class="socialmedia">
+    <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+    <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+    <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+  </nav>
+</footer>
 
 </body>
 </html>
-
